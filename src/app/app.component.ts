@@ -1,4 +1,4 @@
-import { CUSTOM_ELEMENTS_SCHEMA, Component, OnInit, afterNextRender } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, Component, afterNextRender } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { initFlowbite } from 'flowbite';

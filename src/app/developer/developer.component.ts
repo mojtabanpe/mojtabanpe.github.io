@@ -12,16 +12,6 @@ import { CUSTOM_ELEMENTS_SCHEMA, ChangeDetectionStrategy, Component, OnInit } fr
   styleUrl: './developer.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class DeveloperComponent implements OnInit {
+export class DeveloperComponent {
   initialized = true;
-
-  ngOnInit(): void {
-    setTimeout(() => {
-      const developerStack = document.getElementById('developer-stack')?.firstElementChild;
-      const desktopG = developerStack?.shadowRoot?.getElementById('developer-desk');
-      const children = desktopG?.children;
-      const phpSection = children?.item(children.length - 2) as ChildNode;
-      desktopG?.removeChild(phpSection);
-    }, 500);
-  }
 }
